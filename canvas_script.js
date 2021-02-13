@@ -48,7 +48,6 @@ ctx.lineTo(400,350);
 ctx.lineTo(450,400);
 ctx.fillStyle = 'red';
 ctx.fill();
-
 //windows
 ctx.fillStyle = 'lightblue';
 ctx.fillRect(360,435,20,20);
@@ -57,6 +56,14 @@ ctx.fillRect(420,435,20,20);
 //door
 ctx.fillStyle = 'black';
 ctx.fillRect(388, 460, 25, 40);
+
+//tree
+ctx.fillStyle ='saddlebrown';
+ctx.fillRect(500, 400, 30, 100);
+ctx.beginPath();
+ctx.arc(515, 400, 50, 0, Math.PI*2);
+ctx.fillStyle = 'olive';
+ctx.fill();
 
 //words
 ctx.font = '25px Century Gothic'
