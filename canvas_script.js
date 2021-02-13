@@ -30,8 +30,6 @@ ctx.arc(300, 100, 50, 0, Math.PI*2);
 ctx.fillStyle = 'white';
 ctx.fill();
 
-
-
 //mountain
 ctx.beginPath();
 ctx.moveTo(600, 500);
