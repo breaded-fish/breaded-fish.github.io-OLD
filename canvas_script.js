@@ -1,71 +1,123 @@
 const canvas= document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 
+//Below are line reducing functions for the sake of efficency
+/*
+function drawcircle:
+     draws a circle
+ -arguements:
+    -x and y cordinates of the canvas
+    -radius
+    -color
+*/
+function drawcircle(x, y, radius, color){
+  ctx.beginPath();
+  ctx.arc(x, y, radius, 0, Math.PI*2);
+  ctx.fillStyle = color;
+  ctx.fill();
+}
+
+/*
+function drawrect:
+     draws a rectangle
+ -arguements:
+    -x and y cordinates of the canvas
+    -length
+    -width
+    -color
+*/
+function drawrect(x, y, length, width, color){
+  ctx.fillStyle = color;
+  ctx.fillRect(x, y, length, width);
+}
+
+/*
+function drawtriangle:
+    draws a triangle
+ -arguements:
+    -x1 and x2 starting position
+    -x3 and x4 secondary position
+    -x5 and x6 tertiary postion 
+    -color
+*/
+function drawtriangle(x1, x2, x3,x4, x5, x6, color){
+  ctx.beginPath();
+  ctx.moveTo(x1,x2);
+  ctx.lineTo(x3,x4);
+  ctx.lineTo(x5,x6);
+  ctx.fillStyle = color;
+  ctx.fill();
+}
+/*
+function drawtext:
+    draws text
+  -arguements:
+    -text
+    -font type
+    -color
+    -x and y positions
+*/
+function drawtext(text, font, color, x, y){
+  ctx.font = font;
+  ctx.fillStyle= color;
+  ctx.fillText(text, x, y);
+
+}
+/*
+Special function drawgrid
+    -draws a grid for ease of mapping
+    -circle = 100 units;
+ */
+
+drawgrid(false);//I created a boolean for the later uses, maybe let the user turn on the grid?
+
+function drawgrid(boolean){
+  var w = (canvas.width/100);
+  var h = (canvas.height/100);
+
+  if(boolean === true)
+  {
+    for(var a = 1; a < w ; a++)
+    {
+      var x = a*100;
+      for (var b= 1; b < h ; b++)
+      {
+        var y = b*100;
+        drawcircle(x, y, 5, 'black');
+      }
+    }
+  }
+}
 
 //ground
-ctx.fillStyle = 'brown';
-ctx.fillRect(0, 500, 800, 100);
+drawrect(0, 500, 800, 100, 'brown');
 
 //grass
-ctx.fillStyle = 'green';
-ctx.fillRect(0, 500, 800, 25);
+drawrect(0, 500, 800, 25, 'green');
 
 //sun
-ctx.beginPath();
-ctx.arc(700, 100, 75, 0, Math.PI*2);
-ctx.fillStyle = 'yellow';
-ctx.fill();
+drawcircle(700, 100, 75, 'yellow');
 
 //clouds
-ctx.beginPath();
-ctx.arc(200, 100, 50, 0, Math.PI*2);
-ctx.fillStyle = 'white';
-ctx.fill();
-ctx.beginPath();
-ctx.arc(250, 95, 55, 0, Math.PI*2);
-ctx.fillStyle = 'white';
-ctx.fill();
-ctx.beginPath();
-ctx.arc(300, 100, 50, 0, Math.PI*2);
-ctx.fillStyle = 'white';
-ctx.fill();
-
+drawcircle(200, 100, 50,'white');
+drawcircle(250, 95, 60,'white');
+drawcircle(300, 100, 50, 'white');
 //mountain
-ctx.beginPath();
-ctx.moveTo(600, 500);
-ctx.lineTo(300,300);
-ctx.lineTo(200,500);
-ctx.fillStyle = 'gray';
-ctx.fill();
+drawtriangle(200, 500, 400, 300, 600, 500,'gray');
 
 //house
-ctx.fillStyle = 'blue';
-ctx.fillRect(350, 400, 100, 100);
+drawrect(350, 400, 100, 100,'blue');
 //roof
-ctx.beginPath();
-ctx.moveTo(350,400);
-ctx.lineTo(400,350);
-ctx.lineTo(450,400);
-ctx.fillStyle = 'red';
-ctx.fill();
+drawtriangle(350,400,400,350,450,400,'red');
 //windows
-ctx.fillStyle = 'lightblue';
-ctx.fillRect(360,435,20,20);
-ctx.fillRect(420,435,20,20);
-
+drawrect(360, 435, 20, 20, 'lightblue');
+drawrect(420, 435, 20, 20, 'lightblue');
 //door
-ctx.fillStyle = 'black';
-ctx.fillRect(388, 460, 25, 40);
+drawrect(388, 460, 25, 40, 'black');
 
 //tree
-ctx.fillStyle ='saddlebrown';
-ctx.fillRect(500, 400, 30, 100);
-ctx.beginPath();
-ctx.arc(515, 400, 50, 0, Math.PI*2);
-ctx.fillStyle = 'olive';
-ctx.fill();
+drawrect(500, 400, 30, 100, 'saddlebrown');
+drawcircle(515, 400, 50, 'olive');
 
 //words
-ctx.font = '25px Century Gothic'
-ctx.fillStyle='black';
-ctx.fillText('Pain is relative!', 325, 300);
+drawtext('Pain is relative!','25px Century Gothic','black',325, 350);
