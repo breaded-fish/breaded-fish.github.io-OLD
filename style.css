@@ -5,11 +5,6 @@ body {
 	width: 100%;
 }
 
-@font-face {
-	font-family: Ball Point;
-	src: url('resource/ballpoint.otf');
-}
-
 header{
 	font-family: "Century Gothic", sans-serif;
 	color: #000;
@@ -51,6 +46,13 @@ ul li a:hover{
 	left: 50%;
 	transform: translate(-50%,-50%);
 	font-size: 150px;
+}
+
+.title h2{
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%,-50%);
 }
 
 .title2 h1 {
