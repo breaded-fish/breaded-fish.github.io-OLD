@@ -16,6 +16,22 @@ ctx.arc(700, 100, 75, 0, Math.PI*2);
 ctx.fillStyle = 'yellow';
 ctx.fill();
 
+//clouds
+ctx.beginPath();
+ctx.arc(200, 100, 50, 0, Math.PI*2);
+ctx.fillStyle = 'white';
+ctx.fill();
+ctx.beginPath();
+ctx.arc(250, 95, 55, 0, Math.PI*2);
+ctx.fillStyle = 'white';
+ctx.fill();
+ctx.beginPath();
+ctx.arc(300, 100, 50, 0, Math.PI*2);
+ctx.fillStyle = 'white';
+ctx.fill();
+
+
+
 //mountain
 ctx.beginPath();
 ctx.moveTo(600, 500);
@@ -47,4 +63,4 @@ ctx.fillRect(388, 460, 25, 40);
 //words
 ctx.font = '25px Century Gothic'
 ctx.fillStyle='black';
-ctx.fillText('Hello World!', 325, 300);
+ctx.fillText('Pain is relative!', 325, 300);
