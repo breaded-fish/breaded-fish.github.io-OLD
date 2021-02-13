@@ -1,0 +1,73 @@
+body {
+	background-image: url(background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+}
+
+@font-face {
+	font-family: Ball Point;
+	src: url('resource/ballpoint.otf');
+}
+
+header{
+	font-family: "Century Gothic", sans-serif;
+	color: #000;
+}
+
+ul{
+	float: right;
+	margin-top: 20px;
+	margin-right: 20px;
+}
+
+ul li{
+	display: inline-block;
+	padding: 15px;
+	font-size: 20px;
+}
+
+ul li a{
+	color: inherit;
+	text-decoration: none;
+	transition: 0.2s ease;
+}
+
+ul li a:hover{
+	color: #b3b3b3;
+}
+
+.logo img{
+	float: left;
+	height: auto;
+	width: 150px;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+.title h1 {
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 150px;
+}
+
+.title2 h1 {
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 50px;
+}
+
+.canvas-div{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+#canvas {
+	background: #cfcfcf;
+	border-radius: 5px;
+}
