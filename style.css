@@ -59,6 +59,13 @@ ul li a:hover{
 	padding-top: 20px;
 }
 
+/*Edit heading for assignment.html*/
+.assign-instructions h1{
+	text-align: center;
+	padding-top: 100px;
+	margin: auto;
+}
+
 /*Canvas settings*/
 #canvas {
 	background: #cfcfcf;
@@ -70,7 +77,7 @@ ul li a:hover{
 
  .accordion {
   background-color: rgba(238, 238, 238, 0);
-	font-family: "Century Gothic", sans-serif;
+	font-family: inherit;
 	font-size: 20px;
   color: rgb(0, 0, 0);
   cursor: pointer;
