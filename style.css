@@ -10,6 +10,8 @@ header{
 	color: #000;
 }
 
+
+/*Top right hand buttons settings*/
 ul{
 	float: right;
 	margin-top: 20px;
@@ -32,6 +34,8 @@ ul li a:hover{
 	color: #b3b3b3;
 }
 
+
+/*This is for the logo*/
 .logo img{
 	float: left;
 	height: auto;
@@ -40,7 +44,9 @@ ul li a:hover{
 	margin-left: 20px;
 }
 
-.title h1 {
+
+/*Used for the text in index.html*/
+.index-title h1 {
 	position: absolute;
 	top: 35%;
 	left: 50%;
@@ -48,28 +54,44 @@ ul li a:hover{
 	font-size: 150px;
 }
 
-.title h2{
+.index-title h2{
 	position: absolute;
 	top: 55%;
 	left: 50%;
 	transform: translate(-50%,-50%);
 }
 
-.title2 h1 {
-	position: absolute;
-	top: 10%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	font-size: 50px;
-}
-
-.canvas-div{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-}
+/*Canvas settings*/
 #canvas {
 	background: #cfcfcf;
 	border-radius: 5px;
 }
+
+
+/*These settings below are used to customize the accordian*/
+
+ .accordion {
+  background-color: rgba(238, 238, 238, 0);
+	font-family: "Century Gothic", sans-serif;
+	font-size: 20px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 10px 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+	text-align: center;
+} 
