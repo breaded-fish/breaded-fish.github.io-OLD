@@ -47,18 +47,16 @@ ul li a:hover{
 
 /*Used for the text in index.html*/
 .index-title h1 {
-	position: absolute;
-	top: 35%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	font-size: 150px;
+	text-align: center;
+	padding-top: 200px;
+	width: 100%;
+	font-size: 100px;
+	margin: auto;
 }
 
 .index-title h2{
-	position: absolute;
-	top: 55%;
-	left: 50%;
-	transform: translate(-50%,-50%);
+	text-align: center;
+	padding-top: 20px;
 }
 
 /*Canvas settings*/
