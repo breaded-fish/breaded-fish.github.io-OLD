@@ -102,6 +102,7 @@ drawcircle(700, 100, 75, 'yellow');
 drawcircle(200, 100, 50,'white');
 drawcircle(250, 95, 60,'white');
 drawcircle(300, 100, 50, 'white');
+
 //mountain
 drawtriangle(200, 500, 400, 300, 600, 500,'gray');
 
@@ -115,9 +116,20 @@ drawrect(420, 435, 20, 20, 'lightblue');
 //door
 drawrect(388, 460, 25, 40, 'black');
 
-//tree
+//right tree
 drawrect(500, 400, 30, 100, 'saddlebrown');
 drawcircle(515, 400, 50, 'olive');
 
+//left tree
+drawrect(275, 400, 30, 100, 'saddlebrown');
+drawcircle(290, 400, 50, 'olive');
+
+//fence
+for(var f = 2; f < 7; f++){
+  var e = f * 100;
+  drawrect(e - 5, 470, 15, 30, 'DarkGoldenRod');
+}
+drawrect(200, 470, 400, 5, 'DarkGoldenRod');
+
 //words
-drawtext('Pain is relative!','25px Century Gothic','black',325, 350);
+drawtext('Pain is relative!','30px Century Gothic','black',300, 200);
