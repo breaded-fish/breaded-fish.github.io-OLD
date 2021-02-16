@@ -11,9 +11,11 @@ header{
 }
 
 @media only screen and (max-width: 600px) {
-  .logo {
-    text-align: center;
-  }
+	
+  	.logo {
+    		text-align: center;
+  	}
+	
 	ul {
 		text-align: center;
 		margin-top: 20px;
