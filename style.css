@@ -11,11 +11,10 @@ header{
 }
 
 @media only screen and (max-width: 600px) {
-	
-  	.logo {
-    		text-align: center;
-  	}
-	
+  .logo {
+    text-align: center;
+  }
+
 	ul {
 		text-align: center;
 		margin-top: 20px;
@@ -30,6 +29,15 @@ header{
 		text-decoration: none;
 		transition: 0.2s ease;
 	}
+}
+
+#canvas_cartoon {
+		background: #cfcfcf;
+		border-radius: 1px;
+}
+#canvas_chart {
+		background: #cfcfcf;
+		border-radius: 1px;
 }
 
 /*Top right hand buttons settings*/
@@ -88,13 +96,6 @@ ul li a:hover{
 	padding-top: 100px;
 	margin: auto;
 }
-
-/*Canvas settings*/
-#canvas {
-	background: #cfcfcf;
-	border-radius: 5px;
-}
-
 
 /*These settings below are used to customize the accordian*/
 
