@@ -71,6 +71,9 @@ function drawgrid(boolean){
 
 drawgrid(false);//I created a boolean for the later uses, maybe let the user turn on the grid?
 
+
+
+//Array of Fruits
 var fruits = {
 
   "name":["Apple","Orange", "Banana", "Kiwi", "Blueberry", "Grapes"],
@@ -79,9 +82,34 @@ var fruits = {
   
 };
 
-for(var f = 0; f < canvas_chart.height/100; f++)
-{
-  drawrect(f*100, 600, 100, (fruits.quantity[f])*-30, fruits.color[f]);
-  drawtext(fruits.name[f],'18px Century Gothic','black',(f*100)+50,550);
-  drawtext(fruits.quantity[f],'20px Century Gothic','black',((f*100) + 50),575);
+/*Special function findchartfit
+
+  This function specifically finds the number required for fitting the bar on to the canvas.
+
+  Math:
+  The first for loop will look into the fruits.quantity and find the largest number.
+
+  In this case it will be: 20.
+
+  With the biggest number we will divide the canvas height (600) with the biggest number which will get us: 30.
+
+  Then with that number we will convert it into a negative number and return it to the drawrect*/
+function findchartfit(){
+  var fit = 0;
+  for (var i in fruits.quantity) {
+   if(fruits.quantity[i] > fit){
+     fit = fruits.quantity[i];
+   }
+    var chartfit = -(canvas_chart.height/fit);
+   return chartfit;
+  }
 }
+
+
+var fitnum = findchartfit();
+for(var f = 0; f < canvas_chart.height/100; f++)
+  {
+    drawrect(f*100, 600, 100, (fruits.quantity[f])*fitnum, fruits.color[f]);
+    drawtext(fruits.name[f],'18px Century Gothic','black',(f*100)+50,550);
+    drawtext(fruits.quantity[f],'20px Century Gothic','black',((f*100) + 50),575);
+  }
