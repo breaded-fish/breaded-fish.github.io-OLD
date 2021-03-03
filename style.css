@@ -41,6 +41,35 @@ header{
 		border-radius: 1px;
 }
 
+#canvas_count{
+		background: #cfcfcf;
+		border-radius: 1px;
+		
+}
+
+/*Button settings*/
+#startButton{
+		font: inherit;
+		font-size: 20px;
+		text-decoration: none;
+		background-color: transparent;
+		padding: 5px 20px;
+		cursor: pointer;
+		border: none;
+		text-decoration: none;
+		display: inline-block;
+		transition: 0.2s ease;
+}
+
+#startButton:hover{
+	color: #b3b3b3;
+}
+
+#startButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
 /*The following code is to customize gist code blocks*/
 body .gist .gist-file {
 	padding-left: 20%;
