@@ -63,6 +63,7 @@ header{
 
 #startButton:hover{
 	color: #b3b3b3;
+	background-color:#b3b3b31a;
 }
 
 #startButton:disabled {
@@ -72,8 +73,8 @@ header{
 
 /*The following code is to customize gist code blocks*/
 body .gist .gist-file {
-	padding-left: 20%;
-	padding-right: 20%;
+	margin-left: 25%;
+	margin-right: 25%;
 }
 body .gist .highlight {
 	background: #272822;
