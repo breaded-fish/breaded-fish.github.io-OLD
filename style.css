@@ -32,10 +32,19 @@ header{
 }
 
 /*Canvas background and border settings*/
+
+/*Assignment canvas settings*/
 #canvas_cartoon {
 		background: #cfcfcf;
 		border-radius: 1px;
 }
+#canvas_animation {
+	background: #87CEEB;
+	border-radius: 1px;
+}
+
+
+/*Labs canvas settings*/
 #canvas_chart {
 		background: #cfcfcf;
 		border-radius: 1px;
@@ -46,6 +55,7 @@ header{
 		border-radius: 1px;
 		
 }
+
 
 /*Button settings*/
 #startButton{
