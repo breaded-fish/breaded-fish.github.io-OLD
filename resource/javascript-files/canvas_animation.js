@@ -258,7 +258,7 @@ This function contains the animation loop.
 */
 
 //Plane settings
-const cycleLoop = [0,1,2,3,0];
+const cycleLoop = [0,1,1,2,2,3,3,0];
 let currentLoopIndex = 0;
 let delay = 30;//delay determines the time between calling the next frame
 
@@ -284,7 +284,7 @@ This function contains the animation loop.
 */
 
 //Smoke settings
-const smoke_cycleLoop = [0,1,2,3,4,5,6,7,8,0];
+const smoke_cycleLoop = [1,1,1,2,2,2,3,3,3,4,4,4,5,5,5,6,6,6,7,7,7,8,8,8];
 let smoke_currentLoopIndex = 0;
 let smoke_delay = 30;//delay determines the time between calling the next frame
 
