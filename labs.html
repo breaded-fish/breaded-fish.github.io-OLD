@@ -55,7 +55,6 @@
 				<h2>Sprite Sheet</h2>
 				<img src = "resource/numbers/spritesheet.png" alt = "spritesheet">
 
-
 				<!-- Script references code from my github page and allows the user to view code-->
 				<h2>Raw Javascript Code</h2>
 				<script src="https://gist.github.com/breaded-fish/dab7c30c5324c8a1b9cd6e0630b92069.js"> </script>
@@ -64,9 +63,25 @@
 				<script src="https://gist.github.com/breaded-fish/dab40e702a89500412de6c8f390d9297.js"></script>
 			</div>
 			
-			<button class="accordion">Lab 3</button>
+			<button class="accordion">Lab 3: Simple Notebook</button>
 			<div class="panel">
-				<p>TBA</p>
+				<h1>Notebook</h1>
+				<!-- Beginning of form-->
+				<form action="" method="get">
+					<label for="noteTitle">Note Title:</label>
+					<!--Note title-->
+					<input type="text" id="noteTitle" name="noteTitle" min="1" max="40"><br><br>
+
+					<!--Actual notes-->
+					<textarea id="notes" name="notes" rows="10" cols="80"></textarea>
+
+					<!--Clear button-->
+					<p><button id="clearButton" type="button">Clear</button></p>
+					<script src="resource/javascript-files/lab_notes_input.js"></script>
+				</form> 
+
+				<h2>Raw Javascript Code</h2>
+				<script src="https://gist.github.com/breaded-fish/77f7408894a18244fe31ed5bd2aeb921.js"></script>
 			</div> 
 
 			<!-- script required for accordian content-->
