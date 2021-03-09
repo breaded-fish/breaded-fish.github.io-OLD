@@ -58,6 +58,8 @@ header{
 
 
 /*Button settings*/
+
+/*Lab 2: Count button*/
 #startButton{
 		font: inherit;
 		font-size: 20px;
@@ -79,6 +81,24 @@ header{
 #startButton:disabled {
   opacity: 0.6;
   cursor: not-allowed;
+}
+
+/*Lab 3: Clear button*/
+#clearButton{
+	font: inherit;
+	font-size: 20px;
+	text-decoration: none;
+	background-color: transparent;
+	padding: 5px 20px;
+	cursor: pointer;
+	border: none;
+	text-decoration: none;
+	display: inline-block;
+	transition: 0.2s ease;
+}
+#clearButton:hover{
+	color: #b3b3b3;
+	background-color:#b3b3b31a;
 }
 
 /*The following code is to customize gist code blocks*/
