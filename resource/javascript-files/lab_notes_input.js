@@ -1,16 +1,16 @@
 //Boiler plate
-var noteTitle = document.getElementById("noteTitle").value;
-var notes = document.getElementById("notes").value;
+var noteTitle = document.getElementById("noteTitle");
+var notes = document.getElementById("notes");
 var clear = document.getElementById("clearButton");
 
 //On input, the Title and Notes are saved seperately into localstorage
 notes.oninput = function(){
-  localStorage.setItem("title",noteTitle);
-  localStorage.setItem("notes",notes);
+  localStorage.setItem("title",noteTitle.value);
+  localStorage.setItem("notes",notes.value);
 }
 
 //When user comes back, onload it will check if there is anything in localstorage, if not then it will just be black
-notes.onload = function(){
+window.onload = function(){
   document.getElementById("noteTitle").value = localStorage.getItem("title");
   document.getElementById("notes").value = localStorage.getItem("notes");
 }
