@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Labs- Ving's Website</title>
 	<link rel ="stylesheet" type="text/css" href="style.css">
-
+	
 </head>
 <body>
 	<header>
@@ -66,6 +66,7 @@
 			<button class="accordion">Lab 3: Simple Notebook</button>
 			<div class="panel">
 				<h1>Notebook</h1>
+
 				<!-- Beginning of form-->
 				<form action="" method="get">
 					<label for="noteTitle">Note Title:</label>
@@ -82,6 +83,26 @@
 
 				<h2>Raw Javascript Code</h2>
 				<script src="https://gist.github.com/breaded-fish/77f7408894a18244fe31ed5bd2aeb921.js"></script>
+			</div> 
+
+			<button class="accordion">Lab 4: Phaser Drag & Drop</button>
+			<div class="panel">
+				<h3>Instructions: Press the button to start the game.</h3>
+				<h4>There is no objective to this game. You just drag the avaiable objects, in which has specific physics tied to them.</h4>
+
+
+				<div id='phaser-game'>
+					<!--Start game button-->
+					<p><input id="startGameButton" type="button" value="Start Game"></p>
+					<!--Scripts for the game-->
+					<script src="resource/phaserGame/phaser.min.js"></script>
+					<script src="resource/phaserGame/main.js"></script>
+					<script src ="resource/phaserGame/sceneMain.js"></script>
+				</div>
+
+				<h2>Raw Javascript Code</h2>
+				<script src="https://gist.github.com/breaded-fish/27e8eb59dc5d98eb69e3bd8bf07e07b2.js"></script>
+				<script src="https://gist.github.com/breaded-fish/45edf19047847f9c71f097124d5e274b.js"></script>
 			</div> 
 
 			<!-- script required for accordian content-->
