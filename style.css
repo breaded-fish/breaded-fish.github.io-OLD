@@ -39,8 +39,20 @@ header{
 		border-radius: 1px;
 }
 #canvas_animation {
-	background: #87CEEB;
-	border-radius: 1px;
+		background: #87CEEB;
+		border-radius: 1px;
+		
+}
+
+#canvas_grouped_barchart {
+		background: #FFFAF0;
+		border-radius: 1px;
+		
+}
+
+#canvas_horizontal_barchart{
+		background: #FFFAF0;
+		border-radius: 1px;
 }
 
 
@@ -55,8 +67,6 @@ header{
 		border-radius: 1px;
 		
 }
-
-
 /*Button settings*/
 
 /*Lab 2: Count button*/
@@ -100,6 +110,33 @@ header{
 	color: #b3b3b3;
 	background-color:#b3b3b31a;
 }
+
+/*Lab 4: Start Game button*/
+#startGameButton{
+	font: inherit;
+	font-size: 20px;
+	text-decoration: none;
+	background-color: transparent;
+	padding: 5px 20px;
+	cursor: pointer;
+	border: none;
+	text-decoration: none;
+	display: inline-block;
+	transition: 0.2s ease;
+}
+
+#startGameButton:hover{
+color: #b3b3b3;
+background-color:#b3b3b31a;
+}
+
+#startGameButton:disabled {
+opacity: 0.6;
+cursor: not-allowed;
+}
+
+
+
 
 /*The following code is to customize gist code blocks*/
 body .gist .gist-file {
